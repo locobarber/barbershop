@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    );
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#d4af37;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin:20px 0;
+}
+
+.btn-principal{
+    background:#d4af37;
+    color:black;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-principal:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:70px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#171717;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card p{
+    color:#d4af37;
+    margin-top:10px;
+    font-size:22px;
+}
+
+.formulario form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,select{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    background:#d4af37;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#mensaje{
+    margin-top:20px;
+    color:#8cff8c;
+    font-weight:bold;
+}
+
+.ubicacion{
+    text-align:center;
+    font-size:1.2rem;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loco Barber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>💈 LOCO BARBER</h1>
+        <p>Tu estilo empieza acá</p>
+
+        <a href="#turnos" class="btn-principal">
+            Reservá tu turno
+        </a>
+    </div>
+</header>
+
+<section class="servicios">
+
+    <h2>Nuestros servicios</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Corte clásico</h3>
+            <p>$10000</p>
+        </div>
+
+        <div class="card">
+            <h3>Fade</h3>
+            <p>$10000</p>
+        </div>
+
+        <div class="card">
+            <h3>Barba</h3>
+            <p>$2000</p>
+        </div>
+
+        <div class="card">
+            <h3>Corte + Barba</h3>
+            <p>$12000</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="turnos" class="formulario">
+
+    <h2>Reservá tu turno</h2>
+
+    <form id="turnoForm">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Tu nombre"
+            required
+        >
+
+        <input
+            type="tel"
+            id="telefono"
+            placeholder="Tu teléfono"
+            required
+        >
+
+        <select id="servicio" required>
+            <option value="">Elegí un servicio</option>
+            <option>Corte clásico - $10000</option>
+            <option>Fade - $10000</option>
+            <option>Barba - $2000</option>
+            <option>Corte + Barba - $12000</option>
+        </select>
+
+        <select id="dia" required>
+            <option value="">Elegí un día</option>
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miércoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sábado</option>
+        </select>
+
+        <select id="hora" required>
+            <option value="">Elegí horario</option>
+            <option>08:00 AM</option>
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+            <option>06:00 PM</option>
+            <option>07:00 PM</option>
+            <option>08:00 PM</option>
+        </select>
+
+        <button type="submit">
+            Confirmar turno
+        </button>
+
+    </form>
+
+    <p id="mensaje"></p>
+
+</section>
+
+<section class="ubicacion">
+
+    <h2>Encontranos</h2>
+
+    <p>📍 Barrio Mora, Woodgate 2910</p>
+
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
